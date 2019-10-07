@@ -4,6 +4,8 @@ import random
 
 # Класс для генерации и записи заказов.
 class OrderGeneration:
+    __slots__ = ('__products', '__len_products', '__orders')
+
     def __init__(self):
         # Список всех товаров.
         self.__products = (
