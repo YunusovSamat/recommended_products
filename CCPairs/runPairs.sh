@@ -1,6 +1,6 @@
 #!/bin/bash
 
-hdfs dfs -rm -r products/output
+hdfs dfs -rm -r products/outputCCPairs
 
 yarn jar $HADOOP_HOME/share/hadoop/tools/lib/hadoop-streaming-*.jar \
 -D mapreduce.job.name="Products CCPairs Job via Streaming" \

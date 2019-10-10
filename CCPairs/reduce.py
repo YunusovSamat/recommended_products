@@ -7,7 +7,7 @@ last_key, sum_values = None, 0
 for line in sys.stdin:
     # Разделяем строку на ключ и значение.
     key, value = line.split('\t')
-    # Если ключ не соответствует старому.
+    # Если ключ не соответствует предыдущему.
     if last_key and last_key != key:
         print(f'{last_key}\t{sum_values}')
         last_key, sum_values = key, int(value)
