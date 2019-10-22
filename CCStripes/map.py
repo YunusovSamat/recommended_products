@@ -2,7 +2,6 @@
 
 import sys
 
-# Получаем каждую строку.
 for line in sys.stdin:
     products = [elem for elem in line.split(';') if elem not in ('', '\n')]
     products.sort()
@@ -14,4 +13,3 @@ for line in sys.stdin:
         for key in d:
             d_format.append(f'{key}:{d[key]}')
         print(f'{products[i]}\t{"&".join(d_format)}')
-

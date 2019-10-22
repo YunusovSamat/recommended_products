@@ -1,0 +1,6 @@
+footwear	trousers:1
+a cap	footwear:1&trousers:1
+footwear	trousers:1
+footwear	trousers:1
+T-shirt	a cap:1&jacket:1
+a cap	jacket:1
