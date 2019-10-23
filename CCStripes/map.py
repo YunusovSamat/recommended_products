@@ -9,7 +9,5 @@ for line in sys.stdin:
         d = dict.fromkeys(products[i+1:], 0)
         for product in products[i+1:]:
             d[product] += 1
-        d_format = list()
-        for key in d:
-            d_format.append(f'{key}:{d[key]}')
-        print(f'{products[i]}\t{"&".join(d_format)}')
+        d_format = '&'.join([f'{key}:{d[key]}' for key in d])
+        print(f'{products[i]}\t{d_format}')

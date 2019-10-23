@@ -8,6 +8,7 @@ yarn jar $HADOOP_HOME/share/hadoop/tools/lib/hadoop-streaming-*.jar \
 -input products/input/ \
 -output products/outputCCStripes/ \
 -mapper `pwd`/map.py \
+-combiner `pwd`/reduce.py \
 -reducer `pwd`/reduce.py
 
 hdfs dfs -cat products/outputCCStripes/part-00000
